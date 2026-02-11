@@ -63,8 +63,6 @@ Large Language Models (LLMs), a Mixture‑of‑Experts framework, blue/green & c
 - [VS Code Extension](#vs-code-extension)
 - [Mintlify Documentation](#mintlify-documentation)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Live App
 
