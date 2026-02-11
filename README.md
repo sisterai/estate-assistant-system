@@ -1967,20 +1967,6 @@ Contributions are encouraged! Follow these steps:
    Once your pull request is merged, you will be recognized as a contributor to the project.
 
 This project follows the [Contributor Covenant Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating, you agree to abide by its terms.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-> [!CAUTION]
-> This project is provided for educational purposes only. Any use, including non-commercial or academic, must include proper attribution to the original creators. Unauthorized redistribution or commercial use without explicit permission is strictly prohibited.
-
-**Copyright © 2025 EstateWise Team. All rights reserved.**
-
-## Contact
-
-For any questions or inquiries, please contact the [repository maintainer](https://github.com/hoangsonww) or open an issue in the repository [here](https://github.com/hoangsonww/EstateWise-Chapel-Hill-Chatbot/issues). You're also welcome to join our ongoing discussions [at this link](https://github.com/hoangsonww/EstateWise-Chapel-Hill-Chatbot/discussions).
-
 ---
 
 Thank you for exploring **EstateWise**! We hope you find it valuable in your real estate journey. If you have any questions or feedback, please don't hesitate to reach out or contribute to the project. 🏡🚀
