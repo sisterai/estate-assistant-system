@@ -1,10 +1,10 @@
 # EstateWise - Your Intelligent Estate Assistant 🏡
 
-**EstateWise** is a **full‑stack, monorepo AI/ML** **chatbot & data analytics project** built for real estates in _Chapel Hill, NC_ and the surrounding areas _(Durham, Raleigh, Cary, Apex, Morrisville, Hillsborough, etc.)_. It features an intelligent chatbot
-featuring a sleek, responsive UI with smart, agentic AI capabilities powered by comprehensive data analysis and advanced machine learning techniques to help you find your dream home! 🏠✨
+**EstateWise** represents a **comprehensive, monorepo AI/ML** **intelligent assistant & analytics platform** designed for real estate properties in _Chapel Hill, NC_ and nearby regions _(Durham, Raleigh, Cary, Apex, Morrisville, Hillsborough, etc.)_. The system includes a sophisticated conversational interface
+with a polished, adaptive user experience enhanced by intelligent, autonomous AI systems driven by thorough data processing and cutting-edge machine learning methods to assist you in discovering your ideal property! 🏠✨
 
-Under the hood, it leverages **agentic AI, Hybrid RAG (Pinecone + Neo4j, kNN + graph enrichment), k‑Means clustering, Chain-of-Thought (CoT),
-Large Language Models (LLMs), a Mixture‑of‑Experts ensemble, blue/green & canary deployment, and so much more** to deliver _fast,_ _hyper‑personalized_ property recommendations based on your preferences! 📲🧠
+Internally, the platform employs **autonomous AI systems, Hybrid RAG (Pinecone + Neo4j, kNN + graph augmentation), k‑Means clustering, Chain-of-Thought (CoT),
+Large Language Models (LLMs), a Mixture‑of‑Experts framework, blue/green & canary deployment strategies, and numerous additional technologies** to provide _rapid,_ _highly customized_ property suggestions tailored to your needs! 📲🧠
 
 <p align="center">
   <a href="https://estatewise.vercel.app/">
@@ -68,11 +68,11 @@ Large Language Models (LLMs), a Mixture‑of‑Experts ensemble, blue/green & ca
 
 ## Live App
 
-Visit the live app on **Vercel** at **[https://estatewise.vercel.app](https://estatewise.vercel.app/)** and explore the intelligent estate assistant! 🚀
+Access the live application on **Vercel** at **[https://estatewise.vercel.app](https://estatewise.vercel.app/)** and discover the intelligent estate assistant! 🚀
 
-The backend API & its documentation are also available at **[https://estatewise-backend.vercel.app](https://estatewise-backend.vercel.app/).** ✨
+The backend API & its documentation are also accessible at **[https://estatewise-backend.vercel.app](https://estatewise-backend.vercel.app/).** ✨
 
-_Feel free to use the app as a guest or sign up for an account to save your conversations!_
+_You're welcome to use the app as a guest or register for an account to preserve your conversations!_
 
 ### Key Technologies Used
 
@@ -139,23 +139,23 @@ For a CLI version of the chatbot, as well as the initial EDA (Exploratory Data A
 
 ### AI Techniques
 
-**EstateWise** combines a modern API, real‑time chat, and a responsive UI with a powerful AI stack to deliver hyper‑personalized property recommendations:
+**EstateWise** integrates a contemporary API architecture, live chat functionality, and an adaptive interface with a robust AI infrastructure to produce highly customized property suggestions:
 
-- **Hybrid RAG (Vector + Graph):** Uses Pinecone for kNN‑based vector retrieval and Neo4j for graph enrichment before fusing results into generated responses.
-- **Agentic AI Pipeline:** Orchestrates the entire AI workflow, managing data retrieval, expert routing, response generation, and feedback integration.
-- **MCP (Model Context Protocol):** Standardizes communication between models and the backend, ensuring consistent context handling and response formatting.
-- **Multi-LLM Approach:** Utilizes multiple LLMs for different tasks to optimize performance and cost.
-- **k‑Means Clustering:** Automatically groups similar listings and finds closest matches to refine recommendations.
-  - All features are also normalized to a range of 0-1 for better clustering and kNN performance.
-- **Decision AI Agent:** Decides whether to fetch RAG data; if yes, it pulls in the Pinecone results, otherwise it skips straight to the Mixture‑of‑Experts pipeline, saving time and cost on simpler queries.
-- **Mixture of Experts (MoE):** Dynamically routes each query through a master model to select specialized sub‑models (Data Analyst, Lifestyle Concierge, Financial Advisor, Neighborhood Expert, Cluster Analyst) for maximal relevance.
-- **Chain-of-Thought (CoT):** Each expert uses a CoT approach to break down complex queries into manageable steps, ensuring accurate and relevant responses.
-- **Feedback Loop & Reinforcement Learning:** Users rate responses; thumbs‑up/down adjust expert weights per conversation, and the system continuously learns to improve accuracy.
-- **Prompt Engineering:** Each expert has a unique prompt template, ensuring tailored responses based on user input.
-  - All experts, agents, and merger have a detailed and ultra-specific prompt template to ensure the best possible responses.
-- **kNN & Cosine Similarity:** Uses Pinecone for fast, real‑time property retrieval based on user queries.
-- **Graph Traversal & Enrichment:** Neo4j adds explainable relationships like same neighborhood/zip and vector‑similar links, enabling statements like “Recommended because it’s in the same neighborhood and similar in price/size to a liked home.”
-- **AI-Generated Visualizations:** The AI generates live Chart.js graphs from Pinecone data to visualize trends and distributions instantly, directly within the chat messages.
+- **Hybrid RAG (Vector + Graph):** Leverages Pinecone for kNN‑based vector search and Neo4j for graph augmentation prior to merging outcomes into generated answers.
+- **Agentic AI Pipeline:** Coordinates the complete AI process, handling data fetching, expert selection, answer creation, and feedback incorporation.
+- **MCP (Model Context Protocol):** Normalizes interactions between models and the backend, guaranteeing uniform context management and answer structure.
+- **Multi-LLM Approach:** Employs various LLMs for distinct operations to enhance efficiency and reduce expenses.
+- **k‑Means Clustering:** Intelligently categorizes comparable properties and identifies nearest matches to enhance suggestions.
+  - All attributes are standardized to a 0-1 range to improve clustering and kNN effectiveness.
+- **Decision AI Agent:** Determines whether to retrieve RAG data; when affirmative, it incorporates Pinecone results, otherwise it proceeds directly to the Mixture‑of‑Experts workflow, conserving resources on straightforward queries.
+- **Mixture of Experts (MoE):** Intelligently directs each request through a primary model to choose specialized sub‑models (Data Analyst, Lifestyle Concierge, Financial Advisor, Neighborhood Expert, Cluster Analyst) for optimal pertinence.
+- **Chain-of-Thought (CoT):** Every expert employs a CoT methodology to decompose intricate questions into digestible components, guaranteeing precise and applicable answers.
+- **Feedback Loop & Reinforcement Learning:** Users evaluate responses; positive/negative ratings modify expert weights per session, and the platform progressively adapts to enhance precision.
+- **Prompt Engineering:** Each expert possesses a distinct prompt structure, guaranteeing customized answers based on user requests.
+  - All experts, agents, and merger utilize comprehensive and highly detailed prompt templates to ensure optimal response quality.
+- **kNN & Cosine Similarity:** Employs Pinecone for quick, instant property lookup based on user questions.
+- **Graph Traversal & Enrichment:** Neo4j incorporates interpretable connections such as shared neighborhood/zip and vector‑similar associations, allowing explanations like "Recommended because it's in the same neighborhood and similar in price/size to a liked home."
+- **AI-Generated Visualizations:** The AI creates dynamic Chart.js visualizations from Pinecone information to display patterns and distributions immediately, embedded directly within chat responses.
 
 For the full Hybrid RAG pipeline, including diagrams and evaluation notes, see **[RAG_SYSTEM.md](RAG_SYSTEM.md).**
 
@@ -177,94 +177,94 @@ The user query is first embedded into a vector representation, which is then use
 
 ## Features
 
-EstateWise is packed with both UI and AI features to enhance your home-finding experience:
+EstateWise offers an extensive collection of both interface and artificial intelligence capabilities to elevate your property search journey:
 
-- **Intelligent Property Recommendations:** Get tailored property suggestions powered by AI and Retrieval‑Augmented Generation (RAG).
+- **Intelligent Property Recommendations:** Receive customized property proposals driven by AI and Retrieval‑Augmented Generation (RAG).
 
-- **Secure User Authentication:** Sign up, log in, and log out with JWT‑based security.
+- **Secure User Authentication:** Register, authenticate, and sign out with JWT‑based protection.
 
 - **Conversation History:**
-  - **Authenticated users** can view, rename, and delete past chats.
-  - **Auto-Generated Conversation Titles**: New conversations automatically receive AI-generated titles (3-6 words) based on the first message, replacing the default "New Conversation" title within seconds.
-  - **Guest users** still have their conversation history saved locally in the browser.
+  - **Authenticated users** can browse, modify, and remove previous conversations.
+  - **Auto-Generated Conversation Titles**: Fresh conversations instantly obtain AI-created titles (3-6 words) derived from the initial message, updating the default "New Conversation" label within moments.
+  - **Guest users** retain their conversation records stored locally in the browser.
 
-- **Full‑Text Search:** Quickly search your conversation history for keywords, topics, or specific properties.
+- **Full‑Text Search:** Rapidly explore your conversation archive for terms, subjects, or particular properties.
 
-- **Rating System & Feedback Loop:** Rate each AI response (thumbs up/down) to adjust expert weights and continuously improve recommendations.
+- **Rating System & Feedback Loop:** Evaluate each AI answer (thumbs up/down) to modify expert weights and progressively enhance suggestions.
 
 - **Mixture‑of‑Experts (MoE) & Manual Expert View:**
-  - The AI dynamically routes queries through specialized experts (Data Analyst, Lifestyle Concierge, Financial Advisor, Neighborhood Expert, Cluster Analyst).
-  - There is a master merger model that synthesizes the responses from all experts.
-  - Optionally switch to any single expert’s view to see their raw recommendation.
+  - The AI intelligently directs questions through domain-specific experts (Data Analyst, Lifestyle Concierge, Financial Advisor, Neighborhood Expert, Cluster Analyst).
+  - A primary merger model consolidates the outputs from all experts.
+  - Optionally toggle to any individual expert's perspective to view their unprocessed recommendation.
 
-- **Chain-of-Thought (CoT):** Each expert uses a CoT approach to break down complex queries into manageable steps, ensuring accurate and relevant responses.
+- **Chain-of-Thought (CoT):** Every expert applies a CoT methodology to decompose complicated questions into workable segments, ensuring precise and applicable answers.
 
 - **Interactive Visualizations:**
-  - In‑chat, the AI generates live Chart.js graphs from Pinecone data so you can instantly see trends and distributions.
-  - A dedicated Visualizations page offers aggregate charts and insights for all Chapel Hill properties.
+  - Within chat, the AI produces dynamic Chart.js visualizations from Pinecone information enabling immediate viewing of patterns and distributions.
+  - A specialized Visualizations page provides consolidated charts and analytics for all Chapel Hill properties.
 
 - **Clustering & Similarity Search:**
-  - k‑Means clustering groups similar properties for more focused suggestions.
-  - kNN & Cosine Similarity (via Pinecone) finds the closest matches to your query in real time.
-  - Graph traversal (via Neo4j) adds explainable relationships like same neighborhood/zip and vector‑similar links, enabling statements like “Recommended because it’s in the same neighborhood and similar in price/size to a liked home.”
+  - k‑Means clustering organizes comparable properties for more targeted recommendations.
+  - kNN & Cosine Similarity (via Pinecone) identifies the nearest matches to your request instantly.
+  - Graph navigation (via Neo4j) incorporates interpretable connections such as shared neighborhood/zip and vector‑similar associations, allowing explanations like "Recommended because it's in the same neighborhood and similar in price/size to a liked home."
 
-- **Insights & Tools Page:** A dedicated page at `/insights` with:
-  - Explain Relationship: shortest graph path between two homes (ZIP/Neighborhood/Similarity edges) with a mini node‑edge diagram.
-  - Graph Similar Properties: reasoned similarities (same neighborhood/zip/similar‑to) with a radial node graph.
-  - Neighborhood Stats: counts and averages for a named neighborhood.
-  - Mortgage & Affordability tools: interactive breakdown + quick utilities.
+- **Insights & Tools Page:** A specialized page at `/insights` featuring:
+  - Explain Relationship: minimal graph route connecting two properties (ZIP/Neighborhood/Similarity connections) with a compact node‑edge visualization.
+  - Graph Similar Properties: logical similarities (shared neighborhood/zip/similar‑to) with a radial node diagram.
+  - Neighborhood Stats: totals and means for a specified neighborhood.
+  - Mortgage & Affordability tools: interactive analysis + rapid utilities.
 
-- **Deal Analyzer:** Utilizes AI/ML to evaluate if a property is a good deal based on historical trends, neighborhood data, and market conditions (at `/analyzer`).
-  - The AI provides a detailed breakdown of factors influencing the deal quality.
-  - Users can input specific properties to analyze or let the AI suggest potential deals from the dataset.
-  - Scorecard system rates properties on various criteria (e.g., price, location, amenities).
-  - Comprehensive **factors considered** include:
-    - Property and financing details
-    - Income assumptions
-    - Operating expenses
-    - Growth and targets
-    - and more...
-  - **Outputs**: Overall deal score, detailed factor breakdowns, monthly breakdown, sensitivity, projection, risk & action plans, and more.
-  - Visual indicators (e.g., color-coded scores) help users quickly assess deal quality.
+- **Deal Analyzer:** Employs AI/ML to assess whether a property represents a favorable opportunity based on past patterns, neighborhood information, and market dynamics (at `/analyzer`).
+  - The AI delivers a thorough analysis of elements affecting the deal value.
+  - Users can enter specific properties to examine or allow the AI to propose potential opportunities from the dataset.
+  - Scoring mechanism evaluates properties on multiple dimensions (e.g., price, location, amenities).
+  - Extensive **factors evaluated** encompass:
+    - Property and financing information
+    - Income projections
+    - Operating costs
+    - Growth and objectives
+    - and additional considerations...
+  - **Outputs**: Comprehensive deal rating, detailed factor analyses, monthly analysis, sensitivity, forecasts, risk & action strategies, and more.
+  - Visual cues (e.g., color-coded ratings) assist users in rapidly evaluating deal quality.
 
-- **Forums & Community Discussions:** A space for users to discuss properties, share experiences, and seek advice from fellow homebuyers (at `/forums`).
-  - Users can create new discussion threads or reply to existing ones.
-  - Upvote/downvote system to highlight valuable contributions.
-  - Moderation tools to ensure a respectful and informative community environment.
+- **Forums & Community Discussions:** A platform for users to exchange property insights, share experiences, and request guidance from fellow homebuyers (at `/forums`).
+  - Users can initiate new discussion topics or respond to current ones.
+  - Voting system to emphasize valuable contributions.
+  - Moderation capabilities to maintain a courteous and educational community atmosphere.
 
-- **Map Page:** A map view at `/map` that displays properties with markers:
-  - Accepts `?zpids=123,456` to show specific homes only.
-  - If no `zpids`, accepts `?q=` to search and caps to a safe max (200) for performance.
-  - Chat replies auto‑include a “View on Map” link when Zillow property links are present.
+- **Map Page:** A geographic view at `/map` that presents properties with markers:
+  - Supports `?zpids=123,456` to display particular homes exclusively.
+  - When no `zpids` provided, accepts `?q=` to search and limits to a safe maximum (200) for performance.
+  - Chat responses automatically include a "View on Map" link when Zillow property links are detected.
 
-- **Smooth Animations:** Engaging transitions and micro‑interactions powered by Framer Motion.
+- **Smooth Animations:** Captivating transitions and micro‑interactions enabled by Framer Motion.
 
-- **Interactive Chat Interface:** Enjoy a fully animated chat experience with Markdown‑formatted responses, collapsible expert views, inline charts, and **real-time streaming responses** powered by Server-Sent Events (SSE).
-  - **Streaming AI Responses:** Words appear in real-time as the AI generates them, providing an engaging and responsive user experience.
-  - **Automatic Retries:** Built-in retry logic with exponential backoff ensures reliable message delivery even with unstable connections.
-  - **Visual Feedback:** Loading indicators, animated cursors, and connection status updates keep users informed throughout the conversation.
+- **Interactive Chat Interface:** Experience a fully animated chat environment with Markdown‑formatted answers, expandable expert views, embedded charts, and **live streaming responses** enabled by Server-Sent Events (SSE).
+  - **Streaming AI Responses:** Text appears instantly as the AI creates it, delivering an immersive and reactive user experience.
+  - **Automatic Retries:** Integrated retry mechanism with exponential backoff guarantees dependable message transmission even with unreliable connections.
+  - **Visual Feedback:** Progress indicators, animated cursors, and connection status notifications keep users updated during the conversation.
 
 - **Responsive, Themeable UI:**
-  - Optimized for desktop, tablet, and mobile.
-  - Dark and light modes with your preference saved locally.
+  - Tuned for desktop, tablet, and mobile devices.
+  - Dark and light themes with your preference preserved locally.
 
-- **Guest Mode**: Use the app without creating an account—history is stored only in your browser.
+- **Guest Mode**: Access the app without account creation—history is maintained only in your browser.
 
 - **Comprehensive Property Data:**
-  - **Over 50,000** Chapel Hill area listings, complete with prices, beds, baths, living area, year built, and more.
-  - For security, this data isn’t included in the repo—please plug in your own.
-  - Peek at our sample dataset here:  
+  - **Over 50,000** Chapel Hill area listings, complete with prices, bedrooms, bathrooms, living area, year built, and additional details.
+  - For security purposes, this data isn't included in the repository—please integrate your own dataset.
+  - Preview our sample dataset here:  
     [Google Drive CSV (50k+ records)](https://drive.google.com/file/d/1vJCSlQgnQyVxoINosfWJWl6Jg1f0ltyo/view?usp=sharing)
 
 - **Production-Ready DevOps & Multi-Cloud Delivery:**  
-  - Turn-key deployments for **AWS (ECS Fargate)**, **Azure (Container Apps)**, **GCP (Cloud Run)**, and **HashiCorp Terraform + Kubernetes (Consul/Nomad mesh)**.  
-  - Built-in support for **Vercel** (frontend + optional backend edge) and **kustomize/Helm** manifests for any Kubernetes cluster.  
-  - Helm charts and Kustomize manifests available in `helm/` and `kubernetes/` for easy customization and deployment to Kubernetes environments.
-  - CI/CD ready with **Jenkins**, **GitHub Actions**, **Azure Pipelines**, and **Cloud Build**.  
-  - See [DEPLOYMENTS.md](DEPLOYMENTS.md) for diagrams, step-by-step guides, and environment toggles.
-  - After cleaning, approx. **30,772 properties** remain in the database, available for the chatbot to use.
-  - Explore `Initial-Data-Analysis.ipynb` in the repo root for an initial, quick Jupyter‑powered dive into the data.
-  - Explore `EDA-CLI-Chatbot.ipynb` in the repo root for a more detailed and comprehensive analysis of the data, as well as a CLI version of our chatbot.
+  - Ready-to-deploy solutions for **AWS (ECS Fargate)**, **Azure (Container Apps)**, **GCP (Cloud Run)**, and **HashiCorp Terraform + Kubernetes (Consul/Nomad mesh)**.  
+  - Native support for **Vercel** (frontend + optional backend edge) and **kustomize/Helm** configurations for any Kubernetes cluster.  
+  - Helm charts and Kustomize configurations available in `helm/` and `kubernetes/` for straightforward customization and deployment to Kubernetes environments.
+  - CI/CD configured with **Jenkins**, **GitHub Actions**, **Azure Pipelines**, and **Cloud Build**.  
+  - See [DEPLOYMENTS.md](DEPLOYMENTS.md) for diagrams, step-by-step instructions, and environment switches.
+  - After processing, approximately **30,772 properties** remain in the database, accessible for the chatbot to utilize.
+  - Review `Initial-Data-Analysis.ipynb` in the repo root for a preliminary, rapid Jupyter‑powered exploration of the data.
+  - Review `EDA-CLI-Chatbot.ipynb` in the repo root for a more thorough and complete analysis of the data, plus a CLI version of our chatbot.
 
 - _and so many more features in the app..._
 
@@ -338,41 +338,41 @@ graph LR
   IngestGraph --> Neo4j
 ```
 
-**EstateWise** is built with a modern, full-stack architecture consisting of two major parts:
+**EstateWise** is constructed with a contemporary, full-stack architecture comprising two primary components:
 
 ### Backend
 
-- **Express.js & TypeScript:** A robust backend API that handles authentication, conversation management, and AI chat processing.
-- **MongoDB:** Database for storing user data, conversation histories, and more.
-- **Pinecone:** A managed vector database for fast, real‑time property retrieval using kNN and cosine similarity.
-- **Neo4j (Graph DB):** Models explicit relationships (neighborhoods, zip codes, property‑to‑property similarities). New endpoints under `/api/graph` power explainable recommendations and path explanations.
-- **Redis:** Caching layer for quick access to frequently used data and to improve performance.
-- **JWT Authentication:** Secure user sessions using JSON Web Tokens.
-- **Integration with AI & RAG:** Communicates with AI APIs and uses **Google Gemini API & Pinecone** for advanced property recommendation logic.
-- **Swagger API Documentation:** Automatically generated API documentation for easy reference and testing.
-- **Docker:** Containerization for easy deployment and scalability.
-- **OpenAPI Specification:** An OpenAPI specification file (`openapi.yaml`) is included in the root directory. You can use Swagger UI or Postman to explore and test the API endpoints.
-- **Prometheus Monitoring:** Collects and visualizes metrics for performance monitoring.
-- **GitHub Actions:** CI/CD pipeline for automated testing and deployment.
-- and more...
+- **Express.js & TypeScript:** A solid backend API that manages authentication, conversation handling, and AI chat operations.
+- **MongoDB:** Database system for preserving user information, conversation records, and additional data.
+- **Pinecone:** A managed vector database for rapid, instant property lookup using kNN and cosine similarity.
+- **Neo4j (Graph DB):** Represents explicit connections (neighborhoods, zip codes, property‑to‑property similarities). Additional endpoints under `/api/graph` enable interpretable recommendations and path explanations.
+- **Redis:** Caching system for rapid retrieval of commonly accessed data and to enhance performance.
+- **JWT Authentication:** Protected user sessions utilizing JSON Web Tokens.
+- **Integration with AI & RAG:** Interfaces with AI APIs and employs **Google Gemini API & Pinecone** for sophisticated property recommendation algorithms.
+- **Swagger API Documentation:** Auto-generated API documentation for convenient reference and testing.
+- **Docker:** Containerization for straightforward deployment and scalability.
+- **OpenAPI Specification:** An OpenAPI specification file (`openapi.yaml`) is included in the root directory. You can utilize Swagger UI or Postman to explore and test the API endpoints.
+- **Prometheus Monitoring:** Gathers and displays metrics for performance tracking.
+- **GitHub Actions:** CI/CD workflow for automated testing and deployment.
+- and additional components...
 
 ### Frontend
 
-- **Next.js & React:** A responsive, animation-rich web application.
-- **Shadcn UI Components:** For a consistent design system across the app.
-- **Framer Motion:** Provides smooth animations and transitions throughout the user experience.
-- **Dark Mode/Light Mode:** Users can toggle themes with seamless background color transitions.
-- **Chart.js:** For interactive data visualizations and graphs.
-- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
-- **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
-- **API Integration:** Communicates with the backend API for chat functionality, user authentication, and conversation management.
-- and more...
+- **Next.js & React:** An adaptive, animation-enhanced web application.
+- **Shadcn UI Components:** For a uniform design system throughout the app.
+- **Framer Motion:** Delivers fluid animations and transitions across the user experience.
+- **Dark Mode/Light Mode:** Users can switch themes with smooth background color changes.
+- **Chart.js:** For dynamic data visualizations and graphs.
+- **Tailwind CSS:** Utility-first CSS framework for quick UI development.
+- **Responsive Design:** Tuned for desktop, tablet, and mobile devices.
+- **API Integration:** Interfaces with the backend API for chat features, user authentication, and conversation handling.
+- and additional elements...
 
 ### High-Level Architecture Flow Diagrams
 
 #### AI Architecture Flow Diagram
 
-Here's a high-level architecture flow diagram that shows the AI processing and expert selection process:
+Here's a high-level architecture flow diagram that illustrates the AI processing and expert selection workflow:
 
 <p align="center">
   <img src="img/flowchart.png" alt="High-Level Architecture Flow Diagram" width="100%" />
@@ -380,7 +380,7 @@ Here's a high-level architecture flow diagram that shows the AI processing and e
 
 #### Mermaid Diagram
 
-This diagram illustrates the flow of user messages through the backend processing, including authentication, loading conversation history, preparing AI agent input, and generating responses using a mixture of experts:
+This diagram demonstrates the flow of user messages through the backend processing, including authentication, loading conversation history, preparing AI agent input, and generating responses using a mixture of experts:
 
 ```mermaid
 flowchart TD
@@ -422,7 +422,7 @@ flowchart TD
 
 #### Overall App Architecture Flow Diagram
 
-Below is a high-level diagram that illustrates the flow of the application, including user interactions, frontend and backend components, and data storage:
+Below is a high-level diagram that demonstrates the flow of the application, including user interactions, frontend and backend components, and data storage:
 
 ```plaintext
          ┌────────────────────────────────┐
@@ -512,13 +512,13 @@ Below is a high-level diagram that illustrates the flow of the application, incl
 
 #### Neo4j Graph Integration
 
-The graph database layer is optional. If enabled, it adds explicit relationship modeling between properties, neighborhoods, and zip codes,
+The graph database layer is optional. When activated, it incorporates explicit relationship modeling between properties, neighborhoods, and zip codes,
 
 <p align="center">
   <img src="img/neo4j.png" alt="Neo4j Graph Integration" width="100%" />
 </p>
 
-The graph layer enhances explainability by allowing the AI to reference relationships like "same neighborhood" or "similar properties" in its recommendations.
+The graph layer improves interpretability by enabling the AI to cite relationships such as "same neighborhood" or "similar properties" in its recommendations.
 
 **Neo4j integration details:**
 
@@ -812,51 +812,51 @@ Infrastructure and deployment scripts for Microsoft Azure live in the [`azure/`]
 ## Usage
 
 - **Landing Page:**  
-  Learn about the app’s features and get started by signing in or continuing as a guest.
+  Discover the app's capabilities and begin by signing in or proceeding as a guest.
 - **Authentication:**  
-  Create an account, log in, and manage your user profile securely using JWT authentication.
+  Register an account, authenticate, and manage your user profile securely using JWT authentication.
 - **Chat Interface:**  
-  Interact with the AI assistant in real time. Authenticated users can save, rename, and delete conversations.
+  Communicate with the AI assistant instantly. Authenticated users can preserve, modify, and remove conversations.
 - **Theme Toggle:**  
-  Switch between dark and light modes with smooth background transitions.
+  Alternate between dark and light modes with fluid background transitions.
 - **Search & Management:**  
-  Easily search through your conversation history and manage your saved conversations from the sidebar.
+  Effortlessly explore your conversation archive and handle your saved conversations from the sidebar.
 - **Insights & Tools Page:**  
-  Access graph-based tools and mortgage calculators to assist in your property search.
+  Utilize graph-based tools and mortgage calculators to support your property search.
 - **Map Page:**  
-  View properties on an interactive map with markers, search functionality, and links to Zillow listings.
+  Examine properties on an interactive map with markers, search capabilities, and links to Zillow listings.
 - **Visualizations Page:**  
-  Explore aggregate charts and insights for all Chapel Hill properties.
+  Investigate consolidated charts and analytics for all Chapel Hill properties.
 - **Market Insights Page:**  
-  Get the latest market trends and insights for Chapel Hill real estate and other markets across the US.
+  Obtain the most recent market trends and insights for Chapel Hill real estate and other markets across the US.
 - **Expert View:**  
-  Toggle between the combined AI response and individual expert responses (Data Analyst, Lifestyle Concierge, Financial Advisor, Neighborhood Expert, Cluster Analyst) to see different perspectives on your query.
+  Switch between the combined AI response and individual expert responses (Data Analyst, Lifestyle Concierge, Financial Advisor, Neighborhood Expert, Cluster Analyst) to view different perspectives on your query.
 - **Interactive Charts:**  
-  View dynamic charts generated by the AI based on your queries, embedded directly in the chat interface.
+  Examine dynamic charts produced by the AI based on your queries, integrated directly in the chat interface.
 - **Smooth Animations:**  
-  Enjoy engaging transitions and micro-interactions powered by Framer Motion.
+  Experience captivating transitions and micro-interactions enabled by Framer Motion.
 - **Responsive Design:**  
-  The app is optimized for desktop, tablet, and mobile devices, ensuring a seamless experience across
+  The app is tuned for desktop, tablet, and mobile devices, ensuring a smooth experience across platforms.
 - **Guest Mode:**  
-  Use the app as a guest without creating an account. Conversations will still be saved locally in the browser.
+  Access the app as a guest without account creation. Conversations will still be preserved locally in the browser.
 - **Rating System:**  
-  Rate the AI's responses to help improve its performance over time. If you are not satisfied with the AI's response, you can give a thumbs down rating, and the backend API will tweak the experts selection process (i.e. the weights of the experts) to improve the model's performance.
+  Evaluate the AI's responses to help enhance its performance over time. If you are dissatisfied with the AI's response, you can provide a thumbs down rating, and the backend API will adjust the experts selection process (i.e. the weights of the experts) to improve the model's performance.
 - **Expert Selection:**  
-  The AI uses a mixture of experts to provide the best possible response based on user input. Users can also select a specific expert's response to view.
+  The AI employs a mixture of experts to deliver the optimal response based on user input. Users can also choose a specific expert's response to examine.
 - **Chat History:**  
-  View and manage your conversation history, including the ability to search for specific conversations (only available for authenticated users).
+  Browse and handle your conversation history, including the capability to search for particular conversations (only available for authenticated users).
 - **Full‑Text Search:**  
-  Quickly search your conversation history for keywords, topics, or specific properties.
+  Rapidly explore your conversation archive for keywords, topics, or specific properties.
 - **Visualizations:**  
-  View interactive charts and graphs generated by the AI based on your queries. The visualizations page provides aggregate charts and insights for all Chapel Hill properties.
-- and so much more...
+  Examine interactive charts and graphs produced by the AI based on your queries. The visualizations page offers consolidated charts and analytics for all Chapel Hill properties.
+- and numerous additional features...
 
 > [!CAUTION]
-> Note: The expert view feature is ONLY available for new messages. If you load a conversation from either the local storage or the database, the expert view feature will not be available, and only the combined response will be shown.
+> Note: The expert view feature is ONLY available for new messages. If you load a conversation from either local storage or the database, the expert view feature will not be available, and only the combined response will be displayed.
 
 ## User Interface
 
-EstateWise features a modern, animated, and fully responsive user interface built with Next.js and Shadcn UI, with the help of Tailwind CSS for styling. The UI is designed to be intuitive and user-friendly, ensuring a seamless experience across devices.
+EstateWise presents a contemporary, animated, and fully adaptive user interface constructed with Next.js and Shadcn UI, utilizing Tailwind CSS for styling. The interface is crafted to be intuitive and user-friendly, guaranteeing a smooth experience across devices.
 
 ### Landing Page
 
@@ -1079,7 +1079,7 @@ However, you don't need to run the app using Docker. You can run the backend and
 
 ## Prometheus Monitoring & Visualizations
 
-Prometheus is used for monitoring the backend server. It collects metrics from the server and provides a web interface to visualize them.
+Prometheus is employed for tracking the backend server. It gathers metrics from the server and offers a web interface to display them.
 
 Metrics collected & visualized include:
 
@@ -1102,11 +1102,11 @@ To view our live server data, go to [this URL](https://estatewise-backend.vercel
 
 ## CI/CD Pipelines
 
-EstateWise supports multiple CI/CD options depending on hosting and operational needs. GitHub Actions is the default for GitHub-hosted automation, Jenkins is the primary production CI/CD engine, and GitLab CI is supported for GitLab-hosted repos.
+EstateWise accommodates multiple CI/CD options depending on hosting and operational requirements. GitHub Actions serves as the default for GitHub-hosted automation, Jenkins functions as the primary production CI/CD engine, and GitLab CI is supported for GitLab-hosted repositories.
 
 ### GitHub Actions
 
-GitHub Actions is used for continuous integration and deployment (CI/CD) of the application. It automatically runs tests, builds the Docker images, and deploys the application to Vercel or AWS whenever changes are pushed to the main branch or when pull requests are created.
+GitHub Actions is employed for continuous integration and deployment (CI/CD) of the application. It automatically executes tests, constructs the Docker images, and deploys the application to Vercel or AWS whenever changes are pushed to the main branch or when pull requests are created.
 
 To view the GitHub Actions workflow, go to the [Actions tab](https://github.com/hoangsonww/EstateWise-Chapel-Hill-Chatbot/actions) of this repository. You can see the status of the latest runs, view logs, and check for any errors.
 
@@ -1130,11 +1130,11 @@ Our pipeline is set up to run the following steps:
   <img src="img/github-actions.png" alt="GitHub Actions CI/CD" width="100%" style="border-radius: 8px" />
 </p>
 
-This ensures that the application is always in a deployable state and that any issues are caught early in the development process.
+This guarantees that the application is consistently in a deployable state and that any problems are identified early in the development process.
 
 ### Jenkins (Primary CI/CD)
 
-Jenkins orchestrates production deployments and multi-cloud rollouts. The primary pipeline is defined in `Jenkinsfile`, with supporting scripts and documentation in `jenkins/`.
+Jenkins coordinates production deployments and multi-cloud rollouts. The primary pipeline is specified in `Jenkinsfile`, with supporting scripts and documentation in `jenkins/`.
 
 - **Scope**: Full pipeline (lint/format → tests → build → security scan → perf checks → deploy).
 - **Deploy strategies**: Blue-Green, Canary, Rolling (implemented by `kubernetes/scripts/blue-green-deploy.sh` and `kubernetes/scripts/canary-deploy.sh`).
@@ -1164,7 +1164,7 @@ GitLab CI is supported via `.gitlab-ci.yml` and helper scripts under `gitlab/`. 
 
 ## MCP Server
 
-Bring EstateWise data, graphs, analytics, and utilities to MCP‑compatible clients (IDEs/assistants) via the `mcp/` package.
+Deliver EstateWise data, graphs, analytics, and utilities to MCP‑compatible clients (IDEs/assistants) through the `mcp/` package.
 
 ![MCP](https://img.shields.io/badge/Model_Context_Protocol-Server-6E56CF?style=for-the-badge&logo=modelcontextprotocol) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=zod&logoColor=white)
 
@@ -1252,7 +1252,7 @@ npm run client:call -- monitoring.stats '{"detailed":true}'
 
 ## Agentic AI Pipeline
 
-A production-ready, multi‑agent CLI with three runtimes to drive research and analysis with tools:
+A production-ready, multi‑agent CLI with three runtimes to facilitate research and analysis with tools:
 
 - Orchestrator (default): Round‑based, MCP‑first agents using a shared blackboard.
 - LangChain + LangGraph: Tool‑calling ReAct agent with MCP, Pinecone, and Neo4j tools.
@@ -1378,7 +1378,7 @@ flowchart TB
 
 ### tRPC API
 
-EstateWise includes a **tRPC** (TypeScript Remote Procedure Call) API as an optional, type-safe alternative to the REST API. This provides end-to-end type safety between backend and frontend, automatic API client generation, and improved developer experience.
+EstateWise incorporates a **tRPC** (TypeScript Remote Procedure Call) API as an optional, type-safe alternative to the REST API. This delivers end-to-end type safety between backend and frontend, automatic API client generation, and enhanced developer experience.
 
 #### tRPC Features
 
@@ -1528,7 +1528,7 @@ curl -G "http://localhost:3001/trpc/analytics.marketTrends" \
 
 ### gRPC Services
 
-EstateWise also provides **gRPC** (Google Remote Procedure Call) services for high-performance, language-agnostic communication between services. This is particularly useful for microservices architectures and cross-language integrations.
+EstateWise also offers **gRPC** (Google Remote Procedure Call) services for high-performance, language-agnostic communication between services. This is especially beneficial for microservices architectures and cross-language integrations.
 
 #### Protocol Buffers
 
@@ -1750,7 +1750,7 @@ Travis CI complements the existing GitHub Actions workflows by running the Node 
 
 ## Testing
 
-The application includes unit tests for both the backend and frontend components. These tests ensure that the application functions correctly and that any changes made do not break existing functionality.
+The application incorporates unit tests for both the backend and frontend components. These tests verify that the application operates correctly and that any modifications do not disrupt existing functionality.
 
 ### Running Tests
 
@@ -1805,10 +1805,10 @@ To run the tests, follow these steps:
 
   - This command runs the end-to-end tests defined in the `cypress/integration` directory using Cypress.
 
-These tests cover various aspects of the application, including:
-- **Unit Tests:** Individual components and functions to ensure they behave as expected.
-- **Integration Tests:** Multiple components working together to ensure they interact correctly.
-- **End-to-End Tests:** Simulating user interactions to ensure the entire application flow works as intended.
+These tests address various aspects of the application, including:
+- **Unit Tests:** Individual components and functions to verify they perform as expected.
+- **Integration Tests:** Multiple components collaborating to verify they interact properly.
+- **End-to-End Tests:** Simulating user interactions to verify the complete application flow operates as intended.
 
 ## OpenAPI Specification
 
@@ -1878,7 +1878,7 @@ For more details, see [jsdoc.app](https://jsdoc.app) and [typedoc.org](https://t
 
 ## Containerization
 
-The application is containerized using Docker to ensure consistent, portable, and reproducible builds across different environments.
+The application is containerized using Docker to guarantee consistent, portable, and reproducible builds across different environments.
 
 * **Backend and Frontend Dockerfiles:**
   The `backend/Dockerfile` and `frontend/Dockerfile` define how to build the container images for their respective services. They include steps to install dependencies, build the code, and configure the production servers.
@@ -1903,7 +1903,7 @@ This approach ensures faster onboarding for developers, simplifies deployments, 
 
 ## VS Code Extension
 
-We have developed a VSCode extension to enhance the development experience with **EstateWise**. This extension provides features such as:
+We have created a VSCode extension to improve the development experience with **EstateWise**. This extension offers features such as:
 
 - **Instant Chat Access**  
   Open the EstateWise chatbot directly in VS Code via the Command Palette (`Estatewise Chat: Open Chat`).
@@ -1934,9 +1934,9 @@ We have developed a VSCode extension to enhance the development experience with 
 
 ## Mintlify Documentation
 
-This project is also documented using Mintlify, which provides an easy way to create and maintain documentation.
+This project is also documented using Mintlify, which offers a straightforward method to create and maintain documentation.
 
-The Mintlify documentation complements, rather than replaces, the existing README and technical docs. It offers a more AI-native, user-friendly interface for exploring the project's features, setup instructions, architecture, and usage examples.
+The Mintlify documentation supplements, rather than replaces, the existing README and technical docs. It provides a more AI-native, user-friendly interface for discovering the project's features, setup instructions, architecture, and usage examples.
 
 You can access the Mintlify documentation for this project at the [Mintlify docs directory](mintlify-ai-docs/README.md).
 
@@ -1946,7 +1946,7 @@ You can access the Mintlify documentation for this project at the [Mintlify docs
 
 ## Contributing
 
-Contributions are welcome! Follow these steps:
+Contributions are encouraged! Follow these steps:
 
 1. **Fork the repository.**
 2. **Create a feature branch:**  
@@ -1983,7 +1983,7 @@ For any questions or inquiries, please contact the [repository maintainer](https
 
 ---
 
-Thank you for checking out **EstateWise**! We hope you find it useful in your real estate journey. If you have any questions or feedback, feel free to reach out or contribute to the project. 🏡🚀
+Thank you for exploring **EstateWise**! We hope you find it valuable in your real estate journey. If you have any questions or feedback, please don't hesitate to reach out or contribute to the project. 🏡🚀
 
 [🔗 Visit the Live App](https://estatewise.vercel.app)
 
